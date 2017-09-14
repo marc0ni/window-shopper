@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3899D3151F6A0C8D00351461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3899D3141F6A0C8D00351461 /* AppDelegate.swift */; };
-		3899D3171F6A0C8D00351461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3899D3161F6A0C8D00351461 /* ViewController.swift */; };
+		3899D3171F6A0C8D00351461 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3899D3161F6A0C8D00351461 /* MainVC.swift */; };
 		3899D31A1F6A0C8D00351461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3899D3181F6A0C8D00351461 /* Main.storyboard */; };
 		3899D31D1F6A0C8D00351461 /* window_shopper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3899D31B1F6A0C8D00351461 /* window_shopper.xcdatamodeld */; };
 		3899D31F1F6A0C8D00351461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3899D31E1F6A0C8D00351461 /* Assets.xcassets */; };
 		3899D3221F6A0C8D00351461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3899D3201F6A0C8D00351461 /* LaunchScreen.storyboard */; };
 		3899D32D1F6A0C8D00351461 /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3899D32C1F6A0C8D00351461 /* window_shopperTests.swift */; };
 		3899D3381F6A0C8D00351461 /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3899D3371F6A0C8D00351461 /* window_shopperUITests.swift */; };
+		3899D3481F6A115800351461 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3899D3471F6A115800351461 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		3899D3111F6A0C8D00351461 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3899D3141F6A0C8D00351461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3899D3161F6A0C8D00351461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3899D3161F6A0C8D00351461 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		3899D3191F6A0C8D00351461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3899D31C1F6A0C8D00351461 /* window_shopper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = window_shopper.xcdatamodel; sourceTree = "<group>"; };
 		3899D31E1F6A0C8D00351461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		3899D3331F6A0C8D00351461 /* window-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3899D3371F6A0C8D00351461 /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		3899D3391F6A0C8D00351461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3899D3471F6A115800351461 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		3899D3131F6A0C8D00351461 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				3899D3461F6A10FB00351461 /* Views */,
+				3899D3451F6A0DE000351461 /* Controller */,
 				3899D3141F6A0C8D00351461 /* AppDelegate.swift */,
-				3899D3161F6A0C8D00351461 /* ViewController.swift */,
 				3899D3181F6A0C8D00351461 /* Main.storyboard */,
 				3899D31E1F6A0C8D00351461 /* Assets.xcassets */,
 				3899D3201F6A0C8D00351461 /* LaunchScreen.storyboard */,
@@ -126,6 +129,22 @@
 				3899D3391F6A0C8D00351461 /* Info.plist */,
 			);
 			path = "window-shopperUITests";
+			sourceTree = "<group>";
+		};
+		3899D3451F6A0DE000351461 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3899D3161F6A0C8D00351461 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3899D3461F6A10FB00351461 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3899D3471F6A115800351461 /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3899D31D1F6A0C8D00351461 /* window_shopper.xcdatamodeld in Sources */,
-				3899D3171F6A0C8D00351461 /* ViewController.swift in Sources */,
+				3899D3171F6A0C8D00351461 /* MainVC.swift in Sources */,
+				3899D3481F6A115800351461 /* CurrencyTextField.swift in Sources */,
 				3899D3151F6A0C8D00351461 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
